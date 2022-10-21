@@ -2,15 +2,16 @@ var character = document.getElementById("character");
 var block = document.getElementById("block");
 
 window.addEventListener('keydown', function(e){
-    if(e.key == " "){
+    if(e.key == "z"){
         jump();
     }
+    if(e.key == "p"){
+        pauseGame();
+    }
+    if(e.key == "r"){
+        startGame();
+    }
 })
-
-// delays start of the game
-// setTimeout(function(){
-//     block.classList.add("block-animate");
-// }, 1000);
 
 setTimeout(startGame, 1000);
 

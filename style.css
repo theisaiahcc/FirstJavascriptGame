@@ -52,3 +52,8 @@ position:absolute;
     100%{top: 150px;}
 }
 
+#ui{
+    margin:auto;
+    width: 40%;
+    padding-top: 4px;
+}
