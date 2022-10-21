@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 h1{
 position:absolute;
 }
@@ -9,8 +10,7 @@ position:absolute;
 #game{
     width: 500px;
     height: 200px;
-    border: 2px solid black;
-    background-color: grey;
+    border-bottom: 2px solid black;
     margin: auto;
 }
 
@@ -20,7 +20,7 @@ position:absolute;
     background-color: rgb(0, 162, 255);
     position: relative;
     top: 150px;
-    left:10px;
+    left:90px;
 }
 .animate{
     animation: jump 500ms;
@@ -29,7 +29,7 @@ position:absolute;
 #block{
     width: 20px;
     height: 20px;
-    background: red;
+    background: rgb(255, 251, 0);
     position: relative;
     top: 130px;
     left: 480px;
@@ -41,12 +41,14 @@ position:absolute;
 
 @keyframes block{
     0%{left:480px;}
-    100%{left:-40px;}
+    100%{left:0px;}
 }
 
 @keyframes jump{
     0%{top: 150px;}
     30%{top: 100px;}
+    50%{top: 100px;}
     70%{top: 100px;}
     100%{top: 150px;}
 }
+

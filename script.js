@@ -1,6 +1,12 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 
+window.addEventListener('keydown', function(e){
+    if(e.key == " "){
+        jump();
+    }
+})
+
 setTimeout(function(){
     block.classList.add("block-animate");
 }, 1000);
@@ -18,10 +24,12 @@ function jump(){
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if(blockLeft < 20 && blockLeft > 0 && characterTop>=130){
-        block.style.animation = "none";
-        block.style.display = "none";
+    if(blockLeft < 100 && blockLeft > 80 && characterTop>=130){
         alert("You lose.");
+        block.classList.remove("block-animate");
+        setTimeout(function(){
+            block.classList.add("block-animate");
+        }, 1000);
     }
 }, 10)
 
