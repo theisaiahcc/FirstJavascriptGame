@@ -11,7 +11,7 @@ window.addEventListener('keydown', function(e){
     if(e.key == "z"){
         jump();
     }
-    if(e.key == "p"){
+    if(e.key == "s"){
         pauseGame();
     }
     if(e.key == "r"){
@@ -28,7 +28,7 @@ function startGame(){
     block.classList.add("block-animate");
     resume.disabled = true;
     pause.disabled = false;
-    heading.innerText = "'Z' to jump!";
+    heading.innerText = "Click or press 'Z' to jump!";
 }
 
 function pauseGame(){

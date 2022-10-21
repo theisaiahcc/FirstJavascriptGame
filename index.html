@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game">
-        <h1>'Z' to jump!</h1>
+    <div id="game" onclick="jump()">
+        <h1>Click or press 'Z' to jump!</h1>
         <h2>Score:0</h2>
         <div id="character"></div>
         <div id="block"></div>
@@ -17,7 +17,7 @@
     <div id="ui">
     <button id="pause" onclick="pauseGame()" tabindex="-1">Stop</button>
     <button id="resume" onclick="startGame()" tabindex="-1">Resume</button><br>
-    <p>Press 'p' to pause and 'r' to resume.</p>
+    <p>Press 's' to stop and 'r' to resume.</p>
     <a href="https://www.youtube.com/watch?v=bG2BmmYr9NQ" target="_blank">YouTube tutorial to make this game.</a>
     </div>
 </body>
